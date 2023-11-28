@@ -1,5 +1,5 @@
 # Frontend Mentor - Interactive rating component
-
+daamate nested variables da create axali 2 file 1 for main and one after submit
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋

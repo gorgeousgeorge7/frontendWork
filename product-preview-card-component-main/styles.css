@@ -31,8 +31,6 @@
 
 .left-side{
     width: 50%;
-    
-
 }
 
 .left-side img{
@@ -40,8 +38,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5%;
-
-
 }
 
 .right-side{
@@ -110,7 +106,36 @@
     justify-content: center;
 }
 
+.btn:hover{
+    background-color: rgb(60, 100, 20);
+}
+
 .btn img{
     color: white;
     padding-right: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    
+    .container{
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+
+    .left-side{
+        width: 100%;
+    }
+
+    .left-side img{
+        max-width: 100%;    
+        height: auto;
+        content: url("./images/image-product-mobile.jpg")
+    }
+
+    .right-side{
+        width: 100%;
+        
+    }
+  }
+  
