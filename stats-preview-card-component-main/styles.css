@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Overpass:wght@400;700&display=swap');
+
+:root{
+--dark-blue: hsl(233, 47%, 7%);
+/* main background */
+--desaturated-blue: hsl(244, 38%, 16%); 
+/* cartd background */
+--Soft-violet: hsl(277, 64%, 61%);
+--White: hsl(0, 0%, 100%);
+/* (main heading, stats) */
+--Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+--Slightly: hsla(0, 0%, 100%, 0.6)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    background-color: var(--dark-blue);
+    font-size: 15px;
+    font-family: 'Inter' , 'Lexend Deca';
+    font-weight: 400;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    max-width: 100vh;
+    
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--desaturated-blue);
+    
+}
+
+h1{
+    color: var(--White);
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+p{
+    color: var(--Slightly-transparent-white);
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    display: flex; 
+    flex-direction: row;
+
+}
+
+ul li{
+    display: flex; 
+    flex-direction: row;
+    color: var(--Slightly);
+    margin-bottom: 15px;
+}
+
+ul li span{
+    color: var(--White);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.right-container {
+    width: 100%;
+    height: auto; 
+}
+
+@media (max-width: 375px) {
+    body{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2rem 1rem 2rem 1rem ;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: var(--dark-blue);
+    }
+
+    .left-container{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    ul{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2rem;
+        
+    }
+    ul li{
+        display: flex;
+        flex-direction: column;
+       line-height: 1.5rem;
+    }
+    .right-container {
+        width: 100%;
+        order: -1; /* Move the right container to the top */
+    }
+
+
+      .image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px 10px 0px 0px;
+      }
+  
+      .purple-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--Soft-violet); /* Change this to the desired green color */
+        opacity: 0.5; /* Adjust the opacity as needed */
+      }
+      .header-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .soft-violet-text{
+        color: var(--Soft-violet)
+      }
+}
